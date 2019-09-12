@@ -257,9 +257,7 @@
       x.parentNode.insertBefore(s,x);
     }());
   }
-
-
-    if (Market.Helpers.GaLsUtils.localStorageAvailable()) {
+  if (Market.Helpers.GaLsUtils.localStorageAvailable()) {
       var clientId = Market.Helpers.GaLsUtils.getClientId();
 
       ga("create", "UA-26464636-7", "auto", {
@@ -275,7 +273,7 @@
         allowLinker: true,
         alwaysSendReferrer: true
       });
-    }
+  }
     ga("author_analytics.send", "pageview");
 </script>
 
@@ -477,7 +475,8 @@
     if (typeof newrelic !== 'undefined') {
       newrelic.setCustomAttribute('pageType', 'other')
     }
-  })()</script>
+    })()
+</script>
 
 <script>if (typeof Cookiebot !== 'undefined' && Cookiebot.consent && Cookiebot.consent.marketing) {
       enableGoogleTagManager();
